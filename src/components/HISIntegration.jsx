@@ -1,48 +1,85 @@
-//Todo:- add API ready for HIS and LIS
-
-// const systems = [
-//   { name: 'Cerner', type: 'Oracle Health', status: 'HL7 FHIR Ready' },
-//   { name: 'Epic', type: 'Epic Systems', status: 'HL7 FHIR Ready' },
-//   { name: 'Meditech', type: 'Meditech Expanse', status: 'HL7 FHIR Ready' },
-//   { name: 'Allscripts', type: 'Veradigm Health', status: 'HL7 FHIR Ready' },
-//   { name: 'eHospital / Custom', type: 'Indian Govt HIS', status: 'API Integration' },
-//   { name: 'Infor Cloverleaf', type: 'Integration Engine', status: 'HL7 v2.x + FHIR' },
-//   { name: 'InterSystems', type: 'HealthShare', status: 'FHIR R4 Ready' },
-//   { name: 'Any HIS', type: 'Custom API Build', status: 'Scoped in 2 weeks' },
-// ];
+const systems = [
+  {
+    name: "API Ready for HIS",
+    type: "Hospital Information System",
+    status: "HL7 FHIR Ready",
+  },
+  {
+    name: "API Ready for LIS",
+    type: "Laboratory Information System",
+    status: "REST API Ready",
+  },
+  {
+    name: "ABDM Compatible",
+    type: "Ayushman Bharat Digital Mission",
+    status: "ABHA Enabled",
+  },
+];
 
 const HISIntegration = () => (
-  <section id="integration" className="py-[88px] px-[5%] bg-[#F8FAFD]">
-    <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#1A6BAD] mb-3">HIS Compatibility</div>
-      <h2 className="font-syne text-[clamp(28px,3.5vw,46px)] font-black text-[#1E2A3B] leading-[1.12] mb-4">
-        Works With Your Existing<br />Hospital Information System
+  <section
+    id="integration"
+    className="bg-[#F8FAFD] px-[5%] py-[88px]"
+  >
+    <div className="mx-auto max-w-[1100px]">
+      {/* Heading */}
+
+      <div className="mb-3 text-[12px] font-bold uppercase tracking-[2.5px] text-[#1A6BAD]">
+        HIS Compatibility
+      </div>
+
+      <h2 className="mb-4 font-syne text-[clamp(28px,3.5vw,46px)] font-black leading-[1.12] text-[#1E2A3B]">
+        Works With Your Existing
+        <br />
+        Hospital Information System
       </h2>
-      <p className="text-base text-[#64748B] max-w-[620px] leading-[1.65] mb-12">
-        GudMed integrates via HL7 FHIR — the international health data standard. No rip-and-replace. No downtime. No retraining your IT team.
+
+      <p className="mb-12 max-w-[620px] text-base leading-[1.65] text-[#64748B]">
+        GudMed integrates seamlessly with Hospital Information
+        Systems (HIS), Laboratory Information Systems (LIS), and
+        healthcare platforms using secure APIs and HL7 FHIR
+        standards. No rip-and-replace. No downtime.
       </p>
 
-      {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      {/* Integration Cards */}
+
+      <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {systems.map(({ name, type, status }) => (
           <div
             key={name}
-            className="bg-white border border-[#E2E8F0] rounded-xl p-5 text-center transition-all hover:border-[#1A6BAD] hover:shadow-[0_4px_24px_rgba(6,12,24,0.12)]"
+            className="rounded-xl border border-[#E2E8F0] bg-white p-5 text-center transition-all duration-300 hover:border-[#1A6BAD] hover:shadow-[0_4px_24px_rgba(6,12,24,0.12)]"
           >
-            <div className="text-sm font-black text-[#1E2A3B] mb-1">{name}</div>
-            <div className="text-[12px] text-[#64748B]">{type}</div>
-            <span className="inline-block mt-2 text-[10px] font-bold text-[#10B981] bg-[#ECFDF5] border border-[#A7F3D0] px-2 py-[2px] rounded">
+            <div className="mb-1 text-sm font-black text-[#1E2A3B]">
+              {name}
+            </div>
+
+            <div className="text-[12px] text-[#64748B]">
+              {type}
+            </div>
+
+            <span className="mt-3 inline-block rounded border border-[#A7F3D0] bg-[#ECFDF5] px-2 py-[3px] text-[10px] font-bold text-[#10B981]">
               {status}
             </span>
           </div>
         ))}
-      </div> */}
+      </div>
 
-      <div className="bg-[#1A6BAD]/6 border border-[#1A6BAD]/20 rounded-2xl p-6 flex items-center gap-5">
-        <span className="text-[32px] flex-shrink-0">⚡</span>
+      {/* ABDM Card */}
+
+      <div className="flex items-center gap-5 rounded-2xl border border-[#1A6BAD]/20 bg-[#1A6BAD]/6 p-6">
+        <span className="flex-shrink-0 text-[32px]">⚡</span>
+
         <div>
-          <div className="text-[15px] font-bold text-[#1E2A3B] mb-1">ABDM &amp; ABHA Integration Built In</div>
-          <div className="text-[13px] text-[#64748B] leading-[1.5]">
-            GudMed is pre-built for India's Ayushman Bharat Digital Mission (ABDM) health data exchange and ABHA-linked patient records. Clinical data submitted automatically — zero additional development required from your IT team.
+          <div className="mb-1 text-[15px] font-bold text-[#1E2A3B]">
+            ABDM &amp; ABHA Integration Built In
+          </div>
+
+          <div className="text-[13px] leading-[1.5] text-[#64748B]">
+            GudMed is built for India's Ayushman Bharat Digital
+            Mission (ABDM) ecosystem with seamless ABHA integration.
+            Clinical documents can be securely exchanged across
+            connected healthcare systems while maintaining compliance
+            with national interoperability standards.
           </div>
         </div>
       </div>
