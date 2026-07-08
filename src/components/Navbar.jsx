@@ -13,7 +13,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="GudMed"
-            className="h-28 md:h-10 w-auto mt-2"
+            className="h-10 md:h-10 w-auto mt-2"
           />
         </a>
 
