@@ -21,30 +21,30 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           <a
             href="#inputs"
-            className="text-black hover:text transition"
+            className="text-black hover:text transition hover:underline"
           >
             Inputs
           </a>
 
           <a
             href="#outputs"
-            className="text-black hover:text transition"
+            className="text-black hover:text transition hover:underline"
           >
             Outputs
           </a>
 
           <a
             href="#integration"
-            className="text-black hover:text transition"
+            className="text-black hover:text transition hover:underline"
           >
             HIS Integration
           </a>
 
           <a
             href="#demo"
-            className="bg-[#1A6BAD] hover:bg-[#2278BB] text-white px-5 py-2.5 rounded-lg font-semibold transition"
+            className="bg-[#2E4168] text-white px-5 py-2.5 rounded-lg font-semibold transition"
           >
-            Get Demo →
+            Book a Live Demo
           </a>
         </div>
 

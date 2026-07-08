@@ -1,4 +1,15 @@
-const DiagCard = ({ icon, title, sub, side }) => {
+import {
+  Mic,
+  ClipboardList,
+  FileText,
+  PenSquare,
+  FileCheck,
+  Pill,
+  ClipboardPlus,
+  ShieldCheck,
+} from "lucide-react";
+
+const DiagCard = ({ icon: Icon, title, sub, side }) => {
   return (
     <div
       className={`
@@ -7,24 +18,26 @@ const DiagCard = ({ icon, title, sub, side }) => {
         hover:scale-[1.02]
         hover:bg-white/[0.08]
         cursor-default
-
         bg-white/[0.04]
         border
-
-        ${
-          side === "in"
-            ? "border-[#E8B84B]/20 hover:border-[#E8B84B]/40"
-            : "border-[#0D9488]/20 hover:border-[#0D9488]/40"
+        ${side === "in"
+          ? "border-[#E8B84B]/20 hover:border-[#E8B84B]/40"
+          : "border-[#0D9488]/20 hover:border-[#0D9488]/40"
         }
-
-        shadow-[0_0_0_1px_rgba(255,255,255,0.02)]
       `}
     >
       <div className="flex items-start gap-3">
-        <div className="text-lg mt-[2px]">{icon}</div>
+        <div className="mt-[2px]">
+          <Icon
+            size={22}
+            className={
+              side === "in" ? "text-white" : "text-white"
+            }
+          />
+        </div>
 
         <div className="flex-1">
-          <div className="text-sm sm:text-[15px] font-semibold text-white group-hover:text-white">
+          <div className="text-sm sm:text-[15px] font-semibold text-white">
             {title}
           </div>
 
@@ -60,7 +73,7 @@ const Hero = () => (
       {/* BADGE */}
       <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[#2E4168] bg-[#2E4168] mb-8">
         <span className="text-xs sm:text-sm font-medium text-white tracking-wide">
-          India's AI-Powered Hospital Information System
+          AI-Powered Hospital Information System • ABDM Ready • NABH Ready
         </span>
       </div>
 
@@ -85,7 +98,7 @@ const Hero = () => (
           href="#demo"
           className="bg-[#2E4168] hover:bg-[#2E4168] text-white px-8 py-4 rounded-xl font-bold transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/30"
         >
-          🚀 See It Live
+          Request a Free Demo
         </a>
 
         <a
@@ -100,7 +113,7 @@ const Hero = () => (
       <div className="bg-[#2E4168] border border-white/10 rounded-2xl p-5 sm:p-8 backdrop-blur-xl">
 
         <div className="text-[11px] sm:text-xs tracking-[3px] uppercase text-white/40 mb-8">
-          Platform Architecture
+          How GudMed AI Works
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-10 items-center">
@@ -108,13 +121,13 @@ const Hero = () => (
           {/* INPUTS */}
           <div className="flex flex-col gap-4 text-left lg:text-right">
             <div className="text-xs tracking-[2px] text-white uppercase">
-              Inputs
+              Clinical Inputs
             </div>
 
-            <DiagCard side="in" icon="🎙️" title="Doctor Voice" sub="Any language · Any accent" />
-            <DiagCard side="in" icon="📋" title="Nurse Charts" sub="Vitals · Observations · MAR" />
-            <DiagCard side="in" icon="📄" title="Clinical Notes" sub="IPD · OPD · ICU · Emergency" />
-            <DiagCard side="in" icon="✍️" title="Consent Forms" sub="Surgical · Anaesthetic · General" />
+            <DiagCard side="in" icon={Mic} title="AI Voice Dictation for Doctors" sub="Any accent" />
+            <DiagCard side="in" icon={ClipboardList} title="Digital Nursing Documentation" sub="Vitals · Observations · MAR" />
+            <DiagCard side="in" icon={FileText} title="Clinical Notes & Assessments" sub="IPD · OPD · ICU · Emergency" />
+            <DiagCard side="in" icon={PenSquare} title="Digital Consent Management" sub="Surgical · Anaesthetic · General" />
           </div>
 
           {/* CENTER AI */}
@@ -129,7 +142,7 @@ const Hero = () => (
                 GUDMED AI
               </div>
               <div className="text-xs text-white/40">
-                Processes
+                Engine
               </div>
             </div>
 
@@ -142,13 +155,13 @@ const Hero = () => (
           {/* OUTPUTS */}
           <div className="flex flex-col gap-4 text-left">
             <div className="text-xs tracking-[2px] text-white uppercase">
-              Outputs Into HIS
+              AI-Generated Clinical Outputs
             </div>
 
-            <DiagCard side="out" icon="📋" title="Discharge Summary" sub="Structured · ICD-10 coded" />
-            <DiagCard side="out" icon="💊" title="Prescription (Rx)" sub="Patient WhatsApp + HIS" />
-            <DiagCard side="out" icon="📊" title="Nursing Records" sub="Shift notes · ICU charts" />
-            <DiagCard side="out" icon="🏛️" title="Insurance / ABDM" sub="Auto-submitted · ABDM ready" />
+            <DiagCard side="out" icon={FileCheck} title="Discharge Summary" sub="AI-Generated, Structured & ICD-10 Ready" />
+            <DiagCard side="out" icon={Pill} title="Prescription (Rx)" sub="Integrated with HIS & Patient Communication" />
+            <DiagCard side="out" icon={ClipboardPlus} title="Nursing Records" sub="Automated Shift Notes & ICU Documentation" />
+            <DiagCard side="out" icon={ShieldCheck} title="Insurance / ABDM" sub="ABDM-Compliant Records & Insurance Documentation" />
           </div>
 
         </div>

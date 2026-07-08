@@ -28,12 +28,12 @@ const steps = [
 const Timeline = () => (
   <section className="py-[88px] px-[5%] bg-[#F8FAFD]">
     <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#2E4168] mb-3">Implementation</div>
+      <div className="text-[12px] font-bold  uppercase text-[#2E4168] mb-3">HIS Implementation</div>
       <h2 className="font-poppins text-[clamp(28px,3.5vw,46px)] font-black text-[#2E4168] leading-[1.12] mb-4">
-        Live in Your Hospital in 14 Days
+        Deploy Your Hospital Information System in Four Simple Steps
       </h2>
       <p className="text-base text-[#64748B] max-w-[620px] leading-[1.65] mb-12">
-        GudMed's implementation team deploys on-site across India. Your clinical team is live and trained within two weeks of contract signing.
+        Deploy GudMed with secure HIS integration, expert onboarding, and dedicated support. Go live in as little as 14 days with minimal disruption to hospital operations.
       </p>
 
       <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

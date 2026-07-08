@@ -2,12 +2,12 @@ const systems = [
   {
     name: "API Ready for HIS",
     type: "Hospital Information System",
-    status: "HL7 FHIR Ready",
+    status: "HL7 FHIR Compatible",
   },
   {
     name: "API Ready for LIS",
     type: "Laboratory Information System",
-    status: "REST API Ready",
+    status: "REST API Enabled",
   },
   {
     name: "ABDM Compatible",
@@ -24,21 +24,16 @@ const HISIntegration = () => (
     <div className="mx-auto max-w-[1100px]">
       {/* Heading */}
 
-      <div className="mb-3 text-[12px] font-bold uppercase tracking-[2.5px] text-[#2E4168]">
-        HIS Compatibility
+      <div className="mb-3 text-[12px] font-bold uppercase  text-[#2E4168]">
+        Healthcare System Integration
       </div>
 
       <h2 className="mb-4 font-poppins text-[clamp(28px,3.5vw,46px)] font-black leading-[1.12] text-[#2E4168]">
-        Works With Your Existing
-        <br />
-        Hospital Information System
+        Seamlessly Integrates with Your <br /> Existing Healthcare Systems
       </h2>
 
       <p className="mb-12 max-w-[620px] text-base leading-[1.65] text-[#64748B]">
-        GudMed integrates seamlessly with Hospital Information
-        Systems (HIS), Laboratory Information Systems (LIS), and
-        healthcare platforms using secure APIs and HL7 FHIR
-        standards. No rip-and-replace. No downtime.
+        GudMed integrates seamlessly with your Hospital Information System (HIS), Laboratory Information System (LIS), Electronic Medical Records (EMR), and other healthcare applications using HL7 FHIR, secure APIs, and industry-standard interoperability protocols. Deploy without replacing your existing software, ensuring faster implementation, secure data exchange, and uninterrupted clinical workflows.
       </p>
 
       {/* Integration Cards */}
@@ -71,15 +66,11 @@ const HISIntegration = () => (
 
         <div>
           <div className="mb-1 text-[15px] font-bold text-[#1E2A3B]">
-            ABDM &amp; ABHA Integration Built In
+            Built for India's Digital Health Ecosystem
           </div>
 
           <div className="text-[13px] leading-[1.5] text-[#64748B]">
-            GudMed is built for India's Ayushman Bharat Digital
-            Mission (ABDM) ecosystem with seamless ABHA integration.
-            Clinical documents can be securely exchanged across
-            connected healthcare systems while maintaining compliance
-            with national interoperability standards.
+           GudMed is fully compatible with the Ayushman Bharat Digital Mission (ABDM) and supports ABHA-based health record exchange. Using national interoperability standards, hospitals can securely share clinical information, improve care coordination, and meet India's evolving digital healthcare compliance requirements.
           </div>
         </div>
       </div>

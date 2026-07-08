@@ -31,7 +31,7 @@ const proofs = [
 const SocialProof = () => (
   <section className="bg-[#F8FAFD] px-[5%] py-[60px]">
     <div className="mx-auto max-w-[1100px] text-center">
-      <div className="mb-5 text-[12px] font-bold uppercase tracking-[2.5px] text-[#2E4168]">
+      <div className="mb-5 text-[12px] font-bold uppercase  text-[#2E4168]">
         Validated &amp; Deployed
       </div>
 
