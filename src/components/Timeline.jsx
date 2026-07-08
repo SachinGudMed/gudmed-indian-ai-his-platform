@@ -28,8 +28,8 @@ const steps = [
 const Timeline = () => (
   <section className="py-[88px] px-[5%] bg-[#F8FAFD]">
     <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#1A6BAD] mb-3">Implementation</div>
-      <h2 className="font-syne text-[clamp(28px,3.5vw,46px)] font-black text-[#1E2A3B] leading-[1.12] mb-4">
+      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#2E4168] mb-3">Implementation</div>
+      <h2 className="font-poppins text-[clamp(28px,3.5vw,46px)] font-black text-[#2E4168] leading-[1.12] mb-4">
         Live in Your Hospital in 14 Days
       </h2>
       <p className="text-base text-[#64748B] max-w-[620px] leading-[1.65] mb-12">
@@ -46,12 +46,12 @@ const Timeline = () => (
         {steps.map(({ n, week, title, desc }) => (
           <div key={n} className="text-center px-4 relative">
             <div
-              className="w-11 h-11 rounded-full bg-[#1A6BAD] text-white flex items-center justify-center font-syne text-base font-black mx-auto mb-5 relative z-10"
+              className="w-11 h-11 rounded-full bg-[#2E4168] text-white flex items-center justify-center font-poppins text-base font-black mx-auto mb-5 relative z-10"
               style={{ boxShadow: '0 0 0 5px #F8FAFD, 0 0 0 7px rgba(26,107,173,0.3)' }}
             >
               {n}
             </div>
-            <div className="text-[11px] font-bold text-[#1A6BAD] tracking-widest uppercase mb-2">{week}</div>
+            <div className="text-[11px] font-bold text-[#2E4168] tracking-widest uppercase mb-2">{week}</div>
             <div className="text-sm font-bold text-[#1E2A3B] mb-2">{title}</div>
             <div className="text-[12px] text-[#64748B] leading-[1.5]">{desc}</div>
           </div>

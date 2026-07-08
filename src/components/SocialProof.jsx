@@ -31,7 +31,7 @@ const proofs = [
 const SocialProof = () => (
   <section className="bg-[#F8FAFD] px-[5%] py-[60px]">
     <div className="mx-auto max-w-[1100px] text-center">
-      <div className="mb-5 text-[12px] font-bold uppercase tracking-[2.5px] text-[#1A6BAD]">
+      <div className="mb-5 text-[12px] font-bold uppercase tracking-[2.5px] text-[#2E4168]">
         Validated &amp; Deployed
       </div>
 
@@ -39,7 +39,7 @@ const SocialProof = () => (
         {proofs.map(({ icon: Icon, label, sub }, i) => (
           <div key={label} className="flex items-center gap-10">
             <div className="flex flex-col items-center">
-              <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#1A6BAD]/10 text-[#1A6BAD]">
+              <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#1A6BAD]/10 text-[#2E4168]">
                 <Icon size={28} strokeWidth={2.2} />
               </div>
 

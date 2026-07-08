@@ -16,7 +16,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
 
         {/* Content */}
         <div>
-          <h2 className="text-2xl font-black leading-tight text-[#2E4168]">
+          <h2 className="font-poppins text-2xl font-black leading-tight text-[#2E4168]">
             Ready to Transform
             <br />
             Your Hospital?

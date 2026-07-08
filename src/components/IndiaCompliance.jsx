@@ -1,7 +1,7 @@
 const badges = [
   { icon: '🏥', title: 'NABH', sub: 'National Hospital Accreditation' },
   { icon: '⚕️', title: 'NABL', sub: 'Laboratory Accreditation' },
-  { icon: '🌍', title: 'JCI', sub: 'International Accreditation' },
+  // { icon: '🌍', title: 'JCI', sub: 'International Accreditation' },
   { icon: '🗄️', title: 'ABDM', sub: 'Ayushman Bharat Digital Mission' },
   { icon: '🔒', title: 'DPDP Act', sub: 'India Data Protection' },
   { icon: '💳', title: 'TPA Networks', sub: 'Star Health · ICICI Lombard · MediAssist' },
@@ -10,7 +10,7 @@ const badges = [
 const IndiaCompliance = () => (
   <div className="bg-[#2E4168] py-[60px] px-[5%]">
     <div className="max-w-[1100px] mx-auto">
-      <h2 className="font-syne text-[28px] font-black text-white text-center mb-9">
+      <h2 className="font-poppins text-[28px] font-black text-white text-center mb-9">
         Compliant with Every Indian Healthcare Standard
       </h2>
       <div className="flex flex-wrap gap-3 justify-center">

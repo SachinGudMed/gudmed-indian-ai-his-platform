@@ -32,13 +32,13 @@ const capabilities = [
 ];
 
 const AILayer = () => (
-  <section className="py-[88px] px-[5%] bg-[#2E4168]">
+  <section className="py-[88px] px-[5%]">
     <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#E8B84B] mb-3">The AI Engine</div>
-      <h2 className="font-syne text-[clamp(28px,3.5vw,46px)] font-black text-white leading-[1.12] mb-4">
+      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#2E4168] mb-3">The AI Engine</div>
+      <h2 className="font-poppins text-[clamp(28px,3.5vw,46px)] font-black text-[#2E4168] leading-[1.12] mb-4">
         What GudMed AI Does<br />With Your Clinical Data
       </h2>
-      <p className="text-base text-white/60 max-w-[620px] leading-[1.65] mb-12">
+      <p className="text-base text-[#2E4168] max-w-[620px] leading-[1.65] mb-12">
         Six AI capabilities working simultaneously — so every piece of clinical data becomes structured, compliant, and actionable.
       </p>
 
@@ -46,7 +46,7 @@ const AILayer = () => (
         {capabilities.map(({ icon, title, desc }) => (
           <div
             key={title}
-            className="bg-white/[0.04] border border-white/10 rounded-2xl p-6 relative overflow-hidden transition-all duration-200 hover:bg-white/[0.08] hover:border-[#1A6BAD]/50 group"
+            className="bg-[#2E4168] border border-white/10 rounded-2xl p-6 relative overflow-hidden transition-all duration-200 cursor-pointer"
           >
             <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#1A6BAD] to-[#0D9488] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
             <div className="text-[26px] mb-4">{icon}</div>

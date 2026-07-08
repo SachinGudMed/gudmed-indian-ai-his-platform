@@ -22,13 +22,13 @@ const metrics = [
 ];
 
 const ROI = () => (
-  <section className="py-[88px] px-[5%] bg-[#2E4168]">
+  <section className="py-[88px] px-[5%]">
     <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#E8B84B] mb-3">Return on Investment</div>
-      <h2 className="font-syne text-[clamp(28px,3.5vw,46px)] font-black text-white leading-[1.12] mb-4">
+      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#2E4168] mb-3">Return on Investment</div>
+      <h2 className="font-poppins text-[clamp(28px,3.5vw,46px)] font-black text-[#2E4168] leading-[1.12] mb-4">
         GudMed Pays for Itself<br />in Month One
       </h2>
-      <p className="text-base text-white/60 max-w-[620px] leading-[1.65] mb-12">
+      <p className="text-base text-[#2E4168] max-w-[620px] leading-[1.65] mb-12">
         Measurable outcomes across clinical time, compliance, revenue, and patient satisfaction — from day one of deployment.
       </p>
 
@@ -36,9 +36,9 @@ const ROI = () => (
         {metrics.map(({ num, title, desc }) => (
           <div
             key={title}
-            className="bg-white/5 border border-white/10 rounded-2xl p-7 transition-all hover:bg-white/[0.09] hover:border-[#1A6BAD]/40"
+            className="bg-[#2E4168] border border-[#2E4168] rounded-2xl p-7 transition-all cursor-pointer"
           >
-            <div className="font-syne text-[42px] font-black text-[#E8B84B] leading-none mb-3">{num}</div>
+            <div className="font-poppins text-[42px] font-black text-white leading-none mb-3">{num}</div>
             <div className="text-[15px] font-bold text-white mb-2">{title}</div>
             <div className="text-[13px] text-white/55 leading-[1.6]">{desc}</div>
           </div>

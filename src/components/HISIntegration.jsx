@@ -24,11 +24,11 @@ const HISIntegration = () => (
     <div className="mx-auto max-w-[1100px]">
       {/* Heading */}
 
-      <div className="mb-3 text-[12px] font-bold uppercase tracking-[2.5px] text-[#1A6BAD]">
+      <div className="mb-3 text-[12px] font-bold uppercase tracking-[2.5px] text-[#2E4168]">
         HIS Compatibility
       </div>
 
-      <h2 className="mb-4 font-syne text-[clamp(28px,3.5vw,46px)] font-black leading-[1.12] text-[#1E2A3B]">
+      <h2 className="mb-4 font-poppins text-[clamp(28px,3.5vw,46px)] font-black leading-[1.12] text-[#2E4168]">
         Works With Your Existing
         <br />
         Hospital Information System
@@ -57,7 +57,7 @@ const HISIntegration = () => (
               {type}
             </div>
 
-            <span className="mt-3 inline-block rounded border border-[#A7F3D0] bg-[#ECFDF5] px-2 py-[3px] text-[10px] font-bold text-[#10B981]">
+            <span className="mt-3 inline-block rounded border border-[#A7F3D0] bg-[#ECFDF5] px-2 py-[3px] text-[10px] font-bold text-[#2E4168]">
               {status}
             </span>
           </div>

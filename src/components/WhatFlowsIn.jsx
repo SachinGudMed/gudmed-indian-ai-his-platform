@@ -24,8 +24,8 @@ const inputs = [
 const WhatFlowsIn = () => (
   <section id="inputs" className="py-[88px] px-[5%] bg-[#F8FAFD]">
     <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#1A6BAD] mb-3">Clinical Inputs</div>
-      <h2 className="font-syne text-[clamp(28px,3.5vw,46px)] font-black text-[#1E2A3B] leading-[1.12] mb-4">
+      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#2E4168] mb-3">Clinical Inputs</div>
+      <h2 className="font-poppins text-[clamp(28px,3.5vw,46px)] font-black text-[#2E4168] leading-[1.12] mb-4">
         GudMed Captures Every<br />Clinical Input — Automatically
       </h2>
       <p className="text-base text-[#64748B] max-w-[620px] leading-[1.65] mb-12">
@@ -38,7 +38,7 @@ const WhatFlowsIn = () => (
             key={title}
             className="bg-white border border-[#E2E8F0] rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,12,24,0.2)] hover:border-[#1A6BAD] group"
           >
-            <span className="absolute top-3 right-3 text-[9px] font-black tracking-[2px] text-[#E8B84B] bg-[#E8B84B]/10 border border-[#E8B84B]/25 rounded px-[7px] py-[2px]">
+            <span className="absolute top-3 right-3 text-[9px] font-black tracking-[2px] text-white bg-[#2E4168] border border-[#E8B84B]/25 rounded px-[7px] py-[2px]">
               INPUT
             </span>
             <div className="text-3xl mb-4">{icon}</div>

@@ -9,7 +9,7 @@ const CTASection = () => {
       className="py-[88px] px-[5%] text-center bg-[#2E4168]"
       // style={{ background: 'linear-gradient(135deg,#0D1F3C,#060C18)' }}
     >
-      <h2 className="font-syne text-[clamp(28px,4vw,52px)] font-black text-white mb-5 tracking-tight">
+      <h2 className="font-poppins text-[clamp(28px,4vw,52px)] font-black text-white mb-5 tracking-tight">
         AI That Works For Your Hospital.<br />Starting in 14 Days.
       </h2>
       <p className="text-[17px] text-white/65 max-w-[560px] mx-auto mb-10">
@@ -24,7 +24,7 @@ const CTASection = () => {
           placeholder="Your hospital email address"
           className="flex-1 min-w-[220px] px-5 py-[15px] rounded-xl border border-white/20 bg-white/7 text-white text-[15px] placeholder-white/40 outline-none focus:border-[#E8B84B] transition-colors"
         />
-        <button className="bg-[#E8B84B] hover:bg-[#F0C55A] text-[#060C18] px-7 py-[15px] rounded-xl border-none font-syne font-black text-[15px] whitespace-nowrap cursor-pointer transition-all hover:-translate-y-px">
+        <button className="bg-white text-[#2E4168] px-7 py-[15px] rounded-xl border-none font-poppins font-black text-[15px] whitespace-nowrap cursor-pointer transition-all hover:-translate-y-px">
           Request Demo →
         </button>
       </div>

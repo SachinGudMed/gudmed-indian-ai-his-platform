@@ -38,7 +38,7 @@ const DiagCard = ({ icon, title, sub, side }) => {
 };
 
 const Hero = () => (
-  <section className="min-h-screen bg-[#2E4168] flex flex-col justify-center items-center px-[5%] pt-28 pb-20 relative overflow-hidden text-center">
+  <section className="min-h-screen flex flex-col justify-center items-center px-[5%] pt-28 pb-20 relative overflow-hidden text-center">
 
     {/* GRID BACKGROUND */}
     <div
@@ -58,22 +58,22 @@ const Hero = () => (
     <div className="relative z-10 max-w-[1000px] w-full">
 
       {/* BADGE */}
-      <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[#E8B84B]/30 bg-[#E8B84B]/10 mb-8">
-        <span className="text-xs sm:text-sm font-medium text-[#E8B84B] tracking-wide">
+      <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-[#2E4168] bg-[#2E4168] mb-8">
+        <span className="text-xs sm:text-sm font-medium text-white tracking-wide">
           India's AI-Powered Hospital Information System
         </span>
       </div>
 
       {/* HEADING */}
-      <h1 className="font-syne text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6">
+      <h1 className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#2E4168] leading-tight mb-6">
         AI That Works
-        <span className="block bg-gradient-to-r from-[#1A6BAD] to-[#0D9488] text-transparent bg-clip-text">
+        <span className="block">
           For Your Hospital.
         </span>
       </h1>
 
       {/* SUBTEXT */}
-      <p className="text-white/60 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
+      <p className="text-[#2E4168] text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
         GudMed is India's AI-powered clinical documentation and Hospital Information System (HIS) platform.
         It sits as the AI intelligence layer above your existing HIS/EMR, capturing clinical inputs
         and converting them into ABDM-ready, insurance-ready structured medical outputs automatically.
@@ -83,21 +83,21 @@ const Hero = () => (
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
         <a
           href="#demo"
-          className="bg-[#1A6BAD] hover:bg-[#2278BB] text-white px-8 py-4 rounded-xl font-bold transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/30"
+          className="bg-[#2E4168] hover:bg-[#2E4168] text-white px-8 py-4 rounded-xl font-bold transition-all hover:-translate-y-1 shadow-lg shadow-blue-600/30"
         >
           🚀 See It Live
         </a>
 
         <a
           href="#inputs"
-          className="border border-white/20 hover:border-white/40 text-white px-8 py-4 rounded-xl font-medium transition"
+          className="border border-[#2E4168] hover:border-[#2E4168] text-[#2E4168] px-8 py-4 rounded-xl font-medium transition"
         >
           How It Works →
         </a>
       </div>
 
       {/* ARCHITECTURE */}
-      <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-5 sm:p-8 backdrop-blur-xl">
+      <div className="bg-[#2E4168] border border-white/10 rounded-2xl p-5 sm:p-8 backdrop-blur-xl">
 
         <div className="text-[11px] sm:text-xs tracking-[3px] uppercase text-white/40 mb-8">
           Platform Architecture
@@ -107,7 +107,7 @@ const Hero = () => (
 
           {/* INPUTS */}
           <div className="flex flex-col gap-4 text-left lg:text-right">
-            <div className="text-xs tracking-[2px] text-[#E8B84B] uppercase">
+            <div className="text-xs tracking-[2px] text-white uppercase">
               Inputs
             </div>
 
@@ -120,7 +120,7 @@ const Hero = () => (
           {/* CENTER AI */}
           <div className="flex flex-col items-center justify-center gap-4">
 
-            <div className="text-[#E8B84B] text-2xl">
+            <div className="text-white text-2xl">
               →
             </div>
 
@@ -133,7 +133,7 @@ const Hero = () => (
               </div>
             </div>
 
-            <div className="text-[#0D9488] text-2xl">
+            <div className="text-white text-2xl">
               ←
             </div>
 
@@ -141,7 +141,7 @@ const Hero = () => (
 
           {/* OUTPUTS */}
           <div className="flex flex-col gap-4 text-left">
-            <div className="text-xs tracking-[2px] text-[#0D9488] uppercase">
+            <div className="text-xs tracking-[2px] text-white uppercase">
               Outputs Into HIS
             </div>
 

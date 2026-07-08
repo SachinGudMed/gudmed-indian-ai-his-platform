@@ -21,7 +21,7 @@ const outputs = [
     icon: '✍️',
     dest: 'Patient Record + Audit Trail',
     title: 'Signed Consent Documents',
-    desc: 'E-signed, timestamped, biometrically verified consent. Stored securely with complete chain of custody. Instantly retrievable for JCI audit or medico-legal review.',
+    desc: 'E-signed, timestamped, biometrically verified consent. Stored securely with complete chain of custody.',
   },
   {
     icon: '💳',
@@ -40,8 +40,8 @@ const outputs = [
 const WhatFlowsOut = () => (
   <section id="outputs" className="py-[88px] px-[5%] bg-white">
     <div className="max-w-[1100px] mx-auto">
-      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#1A6BAD] mb-3">Structured Outputs</div>
-      <h2 className="font-syne text-[clamp(28px,3.5vw,46px)] font-black text-[#1E2A3B] leading-[1.12] mb-4">
+      <div className="text-[12px] font-bold tracking-[2.5px] uppercase text-[#2E4168] mb-3">Structured Outputs</div>
+      <h2 className="font-poppins text-[clamp(28px,3.5vw,46px)] font-black text-[#2E4168] leading-[1.12] mb-4">
         Every Output Goes Exactly<br />Where It Needs To
       </h2>
       <p className="text-base text-[#64748B] max-w-[620px] leading-[1.65] mb-12">
@@ -52,17 +52,17 @@ const WhatFlowsOut = () => (
         {outputs.map(({ icon, dest, title, desc }) => (
           <div
             key={title}
-            className="bg-[#F8FAFD] border border-[#E2E8F0] rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,12,24,0.2)] hover:border-[#0D9488] group"
+            className="bg-[#2E4168] border border-[#E2E8F0] rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,12,24,0.2)] hover:border-[#2E4168] group"
           >
-            <span className="absolute top-3 right-3 text-[9px] font-black tracking-[2px] text-[#0D9488] bg-[#0D9488]/8 border border-[#0D9488]/20 rounded px-[7px] py-[2px]">
+            <span className="absolute top-3 right-3 text-[9px] font-black tracking-[2px] text-white bg-[#0D9488]/8 border border-[#0D9488]/20 rounded px-[7px] py-[2px]">
               OUTPUT
             </span>
             <div className="text-[26px] mb-3">{icon}</div>
-            <div className="flex items-center gap-1 text-[11px] font-semibold text-[#0D9488] mb-2 before:content-['→']">
+            <div className="flex items-center gap-1 text-[11px] font-semibold text-white mb-2 before:content-['→']">
               <span>{dest}</span>
             </div>
-            <h3 className="text-sm font-bold text-[#1E2A3B] mb-2">{title}</h3>
-            <p className="text-[13px] text-[#64748B] leading-[1.55]">{desc}</p>
+            <h3 className="text-sm font-bold text-white mb-2">{title}</h3>
+            <p className="text-[13px] text-gray-400 leading-[1.55]">{desc}</p>
           </div>
         ))}
       </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/FullLogo_Transparent.png";
+import logo from "../assets/Gudmed1-removebg-preview.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="GudMed"
-            className="h-28 md:h-44 w-auto mt-6"
+            className="h-28 md:h-10 w-auto mt-2"
           />
         </a>
 
